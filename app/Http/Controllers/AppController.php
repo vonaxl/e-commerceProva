@@ -16,10 +16,11 @@ class AppController extends Controller
 
 
     public function login(Request $request){
-
+        //controllo che esista nel database la mail che si sta loggando
         if(Auth::attempt(["email" => $request -> email , "password" => $request -> password], true)){
             return response()-> json(Auth::user(),200);
         }else{
+            //altrimenti restituisco errore
             return response()->json(["error" => "Impossibile effettuare il login"],401);
         }
     }
@@ -33,6 +34,7 @@ class AppController extends Controller
             return response()->json(["error" => "Email già presente"],401);
         }
 
+        //creo un nuovo utente e imposto che i valori immessi nel form di registrazione prendano il valore dei campi nel mio db
         $user = new User();
         $user -> name = $request -> name;
         $user -> email = $request -> email;
@@ -45,6 +47,7 @@ class AppController extends Controller
 
 
     public function logout(){
+        //sfrutto la logout di laravel
         Auth::logout();
     }
 }

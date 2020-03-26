@@ -46,7 +46,7 @@
       <b-carousel-slide caption="Blank Image" img-blank img-alt="Blank image">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eros felis, tincidunt
-          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.
+          a tincidunt eget, convallis vel est. Ut pellentesque ut lacus vel interdum.asd
         </p>
       </b-carousel-slide>
     </b-carousel>

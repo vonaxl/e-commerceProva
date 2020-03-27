@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-fluid">
     <b-carousel
       id="carousel-1"
       v-model="slide"
@@ -7,7 +7,7 @@
       controls
       indicators
       background="#ababab"
-      img-width="1024"
+      img-width="100%"
       img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"

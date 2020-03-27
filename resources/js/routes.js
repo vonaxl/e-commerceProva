@@ -1,6 +1,7 @@
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import Search from "./pages/Search";
 export default [
     {
         path: "/register",
@@ -15,16 +16,17 @@ export default [
     {
         path: "/login",
         name: "login",
-        component: Login
-    }
-    /* {
+        component: Login,
+        props: true
+    },
+    {
         path: "/search/:navSearch",
         name: "resultSearch",
         component: Search
     },
-    {
-        path: "/show/:id",
-        name: "showProduct",
-        component: Show
-    } */
+    // {
+    //     path: "/show/:id",
+    //     name: "showProduct",
+    //     component: Show
+    // }
 ];
